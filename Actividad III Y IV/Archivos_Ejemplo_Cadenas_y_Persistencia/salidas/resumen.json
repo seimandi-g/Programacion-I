@@ -1,0 +1,10 @@
+{
+  "total": 30,
+  "validos": 24,
+  "rechazados": 6,
+  "por_categoria": {
+    "acceso": 9,
+    "pago_en_línea": 9,
+    "soporte_técnico": 6
+  }
+}

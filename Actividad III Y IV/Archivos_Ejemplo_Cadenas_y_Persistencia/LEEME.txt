@@ -1,0 +1,16 @@
+ACTIVIDAD DE CADENAS Y PERSISTENCIA
+Datos completamente sintéticos. No contienen información de estudiantes reales.
+Requisitos: Python 3.10 o posterior. Solo biblioteca estándar, sin instalaciones adicionales.
+1. Extrae el ZIP completo. Conserva la carpeta datos junto a los scripts.
+2. Abre una terminal en esta carpeta.
+3. Ejecuta: python ejemplo_guiado.py (en algunos equipos: python3).
+   Debe mostrar Sensor norte, Valor: 23.5 y Errores: 2.
+4. Completa actividad_inicio.py siguiendo el Word; luego ejecuta:
+   python actividad_inicio.py
+El archivo de inicio contiene TODO y lanza NotImplementedError hasta completarlo.
+Entradas: datos/solicitudes.txt, datos/etiquetas.txt y datos/eventos.txt, en UTF-8.
+solicitudes.txt usa | como separador; no hay comillas, saltos internos ni | dentro de campos.
+La primera línea es un encabezado. Hay una línea vacía intencional.
+El ejemplo genera salidas_demo/; tu programa debe generar salidas/.
+No modifiques datos/. Las salidas de la demostración se regeneran con w y su historial crece con a.
+Consulta el Word para reglas, controles esperados, entregables y evaluación.

@@ -1,0 +1,6 @@
+2026-09-01 INFO Inicio
+2026-09-01 ERROR Archivo ausente
+2026-09-01 WARNING Campo vacío
+2026-09-01 INFO Lectura completada
+2026-09-01 ERROR Formato incorrecto
+2026-09-01 INFO Fin

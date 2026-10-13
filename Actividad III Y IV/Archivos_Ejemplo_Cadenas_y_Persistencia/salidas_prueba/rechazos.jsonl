@@ -1,0 +1,8 @@
+{"linea": 26, "motivo": "Línea Vacía", "texto_original": ""}
+{"linea": 27, "motivo": "Correo inválido", "texto_original": "SOL-0025|sin_arroba.example.com|Acceso|No puedo entrar"}
+{"linea": 28, "motivo": "ID con formato inválido", "texto_original": "XX-0026|alumno26@cucea.udg.mx|Acceso|No puedo entrar"}
+{"linea": 29, "motivo": "Campo vacío", "texto_original": "SOL-0027|alumno27@cucea.udg.mx||Falta categoría"}
+{"linea": 30, "motivo": " Cantidad de campos distinta a cuatro", "texto_original": "SOL-0028|alumno28@cucea.udg.mx|Acceso"}
+{"linea": 31, "motivo": "ID duplicado", "texto_original": "SOL-0001|otro@cucea.udg.mx|Acceso|Solicitud repetida"}
+{"linea": 32, "motivo": "ID con formato inválido", "texto_original": "SOL-00A1|prueba@ejemplo.com|acceso|Prueba de ID inválido"}
+{"linea": 33, "motivo": "Correo inválido", "texto_original": "SOL-0030|a@@b.com|acceso|Prueba de correo inválido"}

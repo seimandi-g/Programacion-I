@@ -1,0 +1,2 @@
+2026-09-01 ERROR Archivo ausente
+2026-09-01 ERROR Formato incorrecto

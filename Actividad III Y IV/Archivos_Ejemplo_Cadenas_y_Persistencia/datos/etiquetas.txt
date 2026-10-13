@@ -1,0 +1,9 @@
+ Acceso 
+ACCESO
+acceso
+ Pago en línea 
+pago-en-línea
+PAGO_EN_LÍNEA
+ Soporte técnico 
+soporte-técnico
+SOPORTE_TÉCNICO
