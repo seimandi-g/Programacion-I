@@ -1,0 +1,19 @@
+En un universo de palabras, cada término sirve como un vórtice de significado, y la frecuencia de cada 
+palabra puede ser tan reveladora como su presencia. Hoy, nos embarcamos en una expedición 
+cuantitativa, donde no solo leemos texto, sino que escudriñamos las profundidades de su composición, 
+desentrañando el peso de cada palabra en el tapiz de su narrativa. 
+Este desafío es para los curiosos de corazón, aquellos que miran más allá de las frases y buscan 
+entender el 'cómo' y el 'cuánto' del lenguaje que consumimos. ¿Alguna vez te has preguntado qué 
+palabras dominan tus páginas favoritas, o cuál es el léxico preferido de los autores que admiras? Aquí 
+está tu oportunidad de descubrirlo. 
+Tu tarea es desarrollar un script, un contador astuto y meticuloso, capaz de recorrer la extensión de un 
+documento, palabra por palabra, contabilizando cada aparición. Este script no es solo un programa, es 
+un cartógrafo lingüístico, trazando la topografía de la terminología en cualquier texto dado. 
+El fruto de tu esfuerzo no se perderá en la consola o será efímero en la pantalla. Tu script irá un paso 
+más allá, inmortalizando su análisis en un nuevo archivo, un compendio de conocimiento que detalla la 
+abundancia o la escasez de cada término. Este archivo se convertirá en el espejo numérico del original, 
+reflejando no historias o ideas, sino la arquitectura de su expresión. 
+Este es un llamado no solo a los programadores, sino también a los lingüistas, a los amantes de los libros 
+y a los analistas de datos. ¿Estás preparado para desenterrar las estadísticas ocultas en los pliegues de 
+los párrafos y exponer la anatomía de la escritura a través de números y listas? Enciende tu IDE, prepara 
+tus dedos sobre el teclado, y comienza la caza de palabras.

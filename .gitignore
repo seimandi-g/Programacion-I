@@ -21,6 +21,11 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
 
 #"C:/Users/hp elitebook/MCD-UDG/Semestre-1/ProgramacionI/Programacion-I/Unidad II/data/
 
