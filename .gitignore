@@ -1,6 +1,15 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+
+# Copias temporales de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Entornos virtuales de Python
+.venv/
+venv/
+
+# Configuración local de Visual Studio Code
 .vscode/
 #Cache folder
 .alcache/
@@ -21,11 +30,6 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
-# Archivos temporales de Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
 
 #"C:/Users/hp elitebook/MCD-UDG/Semestre-1/ProgramacionI/Programacion-I/Unidad II/data/
 
