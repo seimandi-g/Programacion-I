@@ -32,6 +32,7 @@ Los desafíos 1 al 6 utilizan únicamente la biblioteca estándar de Python.
 | Desafío 5 | Composición de funciones | [Desafio_V_Composicion.py](Desafio_V_Composicion.py) |
 | Desafío 6 | Contador de palabras | [Desafio_VI_Contador_Palabras.py](Desafio_VI_Contador_Palabras.py) |
 | Práctica de la Unidad 3 | Limpieza y validación de datos textuales | [Notebook](Seimandi_Unidad3.ipynb) · [Script de Python](unidad3.py) |
+| Actividad integradora de las unidades 3 y 4 | Depuración de texto y persistencia de datos | [Script de Python](../Actividad%20III%20Y%20IV/Archivos_Ejemplo_Cadenas_y_Persistencia/actividad_inicio.py) · [Reporte](../Actividad%20III%20Y%20IV/Reporte%20Cadenas%20y%20persistencia.pdf) |
 
 El desafío 6 incluye el texto de entrada [Texto_desafio6.txt](Texto_desafio6.txt) y el resultado [Texto_desafio6_estadisticas.txt](Texto_desafio6_estadisticas.txt).
 
@@ -205,6 +206,22 @@ python unidad3.py
 ```
 
 La gráfica se guarda como `solicitudes_por_categoria.png` en el directorio desde el que se ejecuta el código.
+
+## Actividad integradora de las unidades 3 y 4: Cadenas y persistencia
+
+**Objetivo.** Limpiar y validar solicitudes de soporte leídas desde un archivo de texto y guardar los resultados para poder verificarlos.
+
+**Solución.** El programa lee las solicitudes línea por línea, normaliza los campos y valida el ID, el correo y la categoría. También detecta IDs duplicados. Para cada rechazo guarda el número de línea, el primer motivo y el texto original.
+
+La carpeta `salidas` contiene las solicitudes limpias, los rechazos en JSONL, el resumen en JSON y el historial de ejecuciones. El programa vuelve a abrir los resultados para comprobar que coincidan con los conteos.
+
+Desde una terminal abierta en la carpeta `Desafios`, ejecuta el script con Python 3.
+
+```powershell
+python "../Actividad III Y IV/Archivos_Ejemplo_Cadenas_y_Persistencia/actividad_inicio.py"
+```
+
+[Consigna de la actividad](../Actividad%20III%20Y%20IV/Actividad_Cadenas_y_Persistencia_Maestria.docx) · [Reporte de resultados](../Actividad%20III%20Y%20IV/Reporte%20Cadenas%20y%20persistencia.pdf)
 
 ## Conceptos practicados
 
