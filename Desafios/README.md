@@ -8,28 +8,30 @@
   </a>
 </p>
 
-# Programación I: Desafíos 1 al 6
+# Programación I: Desafíos 1 al 6 y práctica de la Unidad 3
 
-Colección de ejercicios en Python para practicar cadenas, ciclos, estructuras de datos, funciones y manejo de archivos. Cada programa puede ejecutarse de forma independiente desde la terminal.
+Colección de ejercicios en Python para practicar cadenas, ciclos, estructuras de datos, funciones y manejo de archivos. Los desafíos se ejecutan desde la terminal. La práctica de la Unidad 3 está disponible como script de Python y como notebook de Jupyter.
 
 ## Requisitos
 
 - Python 3.
 - Una terminal o un editor con soporte para Python.
 - Para el desafío 6, un archivo de texto con codificación UTF-8.
+- Para la práctica de la Unidad 3, Matplotlib para generar la gráfica.
 
-Los programas utilizan únicamente la biblioteca estándar de Python; no es necesario instalar paquetes adicionales.
+Los desafíos 1 al 6 utilizan únicamente la biblioteca estándar de Python.
 
 ## Archivos
 
-| Desafío | Tema | Archivo |
+| Ejercicio | Tema | Archivo |
 | --- | --- | --- |
-| 1 | Palíndromos | [Desafio_I_Palindromos.py](Desafio_I_Palindromos.py) |
-| 2 | Generador de histograma | [Desafio_II_Histogramas.py](Desafio_II_Histogramas.py) |
-| 3 | Administrador de contactos | [Desafio_III_Contactos.py](Desafio_III_Contactos.py) |
-| 4 | Funciones `map`, `filter` y `reduce` propias | [Desafio_IV_Funciones.py](Desafio_IV_Funciones.py) |
-| 5 | Composición de funciones | [Desafio_V_Composicion.py](Desafio_V_Composicion.py) |
-| 6 | Contador de palabras | [Desafio_VI_Contador_Palabras.py](Desafio_VI_Contador_Palabras.py) |
+| Desafío 1 | Palíndromos | [Desafio_I_Palindromos.py](Desafio_I_Palindromos.py) |
+| Desafío 2 | Generador de histograma | [Desafio_II_Histogramas.py](Desafio_II_Histogramas.py) |
+| Desafío 3 | Administrador de contactos | [Desafio_III_Contactos.py](Desafio_III_Contactos.py) |
+| Desafío 4 | Funciones `map`, `filter` y `reduce` propias | [Desafio_IV_Funciones.py](Desafio_IV_Funciones.py) |
+| Desafío 5 | Composición de funciones | [Desafio_V_Composicion.py](Desafio_V_Composicion.py) |
+| Desafío 6 | Contador de palabras | [Desafio_VI_Contador_Palabras.py](Desafio_VI_Contador_Palabras.py) |
+| Práctica de la Unidad 3 | Limpieza y validación de datos textuales | [Notebook](Seimandi_Unidad3.ipynb) · [Script de Python](unidad3.py) |
 
 El desafío 6 incluye el texto de entrada [Texto_desafio6.txt](Texto_desafio6.txt) y el resultado [Texto_desafio6_estadisticas.txt](Texto_desafio6_estadisticas.txt).
 
@@ -47,7 +49,7 @@ En Windows también puedes utilizar `py` en lugar de `python`.
 
 **Objetivo:** determinar si una palabra o frase se lee igual en ambos sentidos, ignorando espacios, signos de puntuación y diferencias entre mayúsculas y minúsculas.
 
-**Solución:** la clase `Validador_Palindromos` utiliza dos índices que recorren la cadena desde los extremos hacia el centro. El método `alfanum` identifica letras y números mediante `isalnum()`, y `esPalindromo` compara los caracteres válidos en minúsculas. Si encuentra una diferencia, devuelve `False`; si completa el recorrido, devuelve `True`.
+**Solución:** la clase `Validador_Palindromos` utiliza dos índices que recorren la cadena desde los extremos hacia el centro. El método `alfanum` identifica letras y números mediante `isalnum()`, y `esPalindromo` compara los caracteres válidos en minúsculas. Si encuentra una diferencia, devuelve `False`. Si completa el recorrido, devuelve `True`.
 
 ```powershell
 python Desafio_I_Palindromos.py
@@ -66,7 +68,7 @@ Las tildes se conservan durante la comparación. Una entrada vacía o formada ú
 
 **Objetivo:** representar cantidades mediante barras de asteriscos en la consola.
 
-**Solución:** el programa solicita la cantidad de registros y captura conceptos con sus cantidades. Después valida los datos y genera una barra horizontal por concepto utilizando la repetición de cadenas: `'*' * int(cant)`.
+**Solución:** el programa solicita la cantidad de registros y captura conceptos con sus cantidades. Después valida los datos y genera una barra horizontal por concepto usando la expresión `'*' * int(cant)`.
 
 ```powershell
 python Desafio_II_Histogramas.py
@@ -87,9 +89,9 @@ leones   ***
 tigres   *****
 ```
 
-También se pueden ingresar varios pares en una misma línea separados por comas, por ejemplo: `leones 3, tigres 5`. La cantidad de registros indica cuántas líneas se solicitarán.
+También se pueden ingresar varios pares en una misma línea separados por comas, por ejemplo, `leones 3, tigres 5`. La cantidad de registros indica cuántas líneas se solicitarán.
 
-Los conceptos deben escribirse sin espacios y las cantidades deben ser enteros no negativos. El cero genera una barra vacía. Si se ingresa un dato inválido, el programa reinicia toda la captura; la cantidad de registros debe ser mayor que cero.
+Los conceptos deben escribirse sin espacios y las cantidades deben ser enteros no negativos. El cero genera una barra vacía. Si se ingresa un dato inválido, el programa reinicia toda la captura. La cantidad de registros debe ser mayor que cero.
 
 ## Desafío 3: Administrador de contactos
 
@@ -111,23 +113,23 @@ El menú ofrece las siguientes opciones:
 
 Se rechazan campos vacíos. La búsqueda y la eliminación comparan el nombre completo sin distinguir mayúsculas y minúsculas. Si hay nombres repetidos, la búsqueda muestra todas las coincidencias y la eliminación borra la primera.
 
-Los contactos permanecen en memoria y se pierden al cerrar el programa. El teléfono y el correo se guardan como texto; no se valida su formato.
+Los contactos permanecen en memoria y se pierden al cerrar el programa. El teléfono y el correo se guardan como texto sin validar su formato.
 
 ## Desafío 4: Funciones map, filter y reduce propias
 
 **Objetivo:** implementar funciones que reciban otra función y una lista para transformar, filtrar o acumular sus elementos.
 
-**Solución:** se utilizan ciclos `for` y listas para construir los resultados:
+**Solución:** se utilizan ciclos `for` y listas para construir los resultados.
 
-- `mi_map(funcion, lista)`: aplica la función a cada elemento y devuelve una nueva lista.
-- `mi_filter(funcion, lista)`: devuelve una lista con los elementos que cumplen la condición.
-- `mi_reduce(funcion, lista, valor_inicial)`: acumula un resultado desde el valor inicial y lo devuelve dentro de una lista, siguiendo el requisito de retornar un iterable.
+- `mi_map(funcion, lista)` aplica la función a cada elemento y devuelve una nueva lista.
+- `mi_filter(funcion, lista)` devuelve una lista con los elementos que cumplen la condición.
+- `mi_reduce(funcion, lista, valor_inicial)` acumula un resultado desde el valor inicial y lo devuelve dentro de una lista, siguiendo el requisito de retornar un iterable.
 
 ```powershell
 python Desafio_IV_Funciones.py
 ```
 
-La demostración utiliza la lista `[1, 2, 3, 4, 5]`:
+La demostración utiliza la lista `[1, 2, 3, 4, 5]`.
 
 | Operación | Resultado |
 | --- | --- |
@@ -147,13 +149,13 @@ Con una lista vacía, `mi_map` y `mi_filter` devuelven `[]`, mientras que `mi_re
 python Desafio_V_Composicion.py
 ```
 
-La demostración aplica las funciones `sumar_tres`, `duplicar` y `elevar_al_cuadrado` al número `5`:
+La demostración aplica las funciones `sumar_tres`, `duplicar` y `elevar_al_cuadrado` al número `5`.
 
 ```text
 5 -> 8 -> 16 -> 256
 ```
 
-El resultado final es `256`. Cada función debe recibir un argumento y devolver un valor compatible con la siguiente. Si la lista de funciones está vacía, se devuelve el valor original sin cambios.
+El resultado final es `256`. Cada función debe recibir un argumento y devolver un valor compatible con la siguiente. Si la lista de funciones está vacía, se devuelve el valor original.
 
 ## Desafío 6: Contador de palabras
 
@@ -173,17 +175,36 @@ Nombre del archivo .txt o ruta completa: Texto_desafio6.txt
 
 También puedes escribir `Texto_desafio6` sin extensión o proporcionar una ruta completa. Los nombres y las rutas relativas se buscan desde la carpeta del script.
 
-El resultado se guarda junto al archivo de entrada con el sufijo `_estadisticas.txt`. Para el texto incluido, el nombre es `Texto_desafio6_estadisticas.txt`. Contiene:
+El resultado se guarda junto al archivo de entrada con el sufijo `_estadisticas.txt`. Para el texto incluido, el nombre es `Texto_desafio6_estadisticas.txt`. El archivo contiene:
 
 - Total de palabras.
 - Cantidad de palabras diferentes.
 - Una tabla con cada palabra y su número de ocurrencias, en orden de primera aparición.
 
-Las mayúsculas y minúsculas se unifican, mientras que las tildes se conservan: `Hola` y `hola` se cuentan juntas, pero `si` y `sí` se consideran palabras diferentes.
+Las mayúsculas y minúsculas se unifican, mientras que las tildes se conservan. Por ejemplo, `Hola` y `hola` se cuentan juntas, mientras que `si` y `sí` se consideran palabras diferentes.
 
-**Para repetir la ejecución:** la carpeta ya incluye un archivo de estadísticas. Renómbralo antes de generar otro con el mismo nombre, o utiliza una copia del texto con un nombre distinto. El programa utiliza el modo de creación exclusiva (`"x"`) para evitar sobrescribir resultados.
+**Para repetir la ejecución:** la carpeta ya incluye un archivo de estadísticas. Renómbralo antes de generar otro con el mismo nombre o utiliza una copia del texto con un nombre distinto. El programa utiliza el modo de creación exclusiva (`"x"`) para evitar sobrescribir resultados.
 
-Se muestran mensajes ante una entrada vacía, una extensión distinta de `.txt`, un archivo inexistente, un resultado ya existente, errores de codificación y otros errores de lectura o escritura. El archivo de entrada debe estar guardado en UTF-8; también se admite UTF-8 con BOM.
+Se muestran mensajes ante una entrada vacía, una extensión distinta de `.txt`, un archivo inexistente, un resultado ya existente, errores de codificación y otros errores de lectura o escritura. El archivo de entrada debe estar guardado en UTF-8. También se admite UTF-8 con BOM.
+
+## Práctica de la Unidad 3: Limpieza y validación de datos textuales
+
+**Objetivo:** limpiar y validar registros de solicitudes, calcular indicadores y generar una gráfica por categoría.
+
+**Solución:** el programa separa cada registro en cinco campos usando la barra vertical (`|`). Después limpia el texto y valida el ticket, el nombre, el correo, la categoría y los minutos. Cuando se rechaza un registro, guarda la línea original y el primer motivo de rechazo.
+
+El porcentaje de aceptación se calcula sobre todos los registros de entrada. Para calcular el promedio de minutos, clasificar las solicitudes con un límite de 15 minutos y contar las solicitudes por categoría se usan los registros aceptados. Una solicitud de 15 minutos se clasifica como **en tiempo**.
+
+En el conjunto sintético de la práctica se aceptaron **8 de 12 registros (66.67 %)**. El tiempo promedio fue de **16.25 minutos**, calculado con los **8 registros aceptados**. Datos y Visualización tuvieron **3 solicitudes aceptadas cada una** y Programación tuvo **2**. Estos resultados se limitan al conjunto de la práctica.
+
+Para revisar el procedimiento, las explicaciones y las pruebas, abre [Seimandi_Unidad3.ipynb](Seimandi_Unidad3.ipynb) y ejecuta las celdas en orden. Para ejecutar el script, abre una terminal en `Desafios` y usa:
+
+```powershell
+python -m pip install matplotlib
+python unidad3.py
+```
+
+La gráfica se guarda como `solicitudes_por_categoria.png` en el directorio desde el que se ejecuta el código.
 
 ## Conceptos practicados
 
@@ -193,10 +214,11 @@ Se muestran mensajes ante una entrada vacía, una extensión distinta de `.txt`,
 - Clases y métodos.
 - Funciones como argumentos, funciones internas y composición.
 - Lectura y escritura de archivos, rutas y manejo de excepciones.
+- Limpieza de datos, cálculo de indicadores y gráficas de barras con Matplotlib.
 
 ## Referencia
 
-Las consignas corresponden al documento **Desafios_Programación_1.docx.pdf**, desafíos 1 al 6. Las explicaciones de las soluciones describen el comportamiento de los programas incluidos en esta carpeta.
+Las consignas de los desafíos 1 al 6 corresponden al documento **Desafios_Programación_1.docx.pdf**. La práctica de limpieza y validación de datos textuales corresponde a la **Unidad 3 de Programación I**.
 
 ### Identidad institucional
 
