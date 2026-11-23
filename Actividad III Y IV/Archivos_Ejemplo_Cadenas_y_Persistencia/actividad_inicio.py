@@ -1,4 +1,4 @@
-"""Completa los TODO conforme a las reglas del documento Word."""
+
 from pathlib import Path
 from datetime import datetime
 import json
